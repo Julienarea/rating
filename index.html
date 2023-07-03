@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>area rating</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rating">
+        <div class="rating__counter" id="rating">0</div>
+        <h1>area rating</h1>
+        <div class="buttons">
+          <button onclick="decreaseRating()">-</button>
+          <button onclick="increaseRating()">+</button>
+        </div>
+        <div class="preset">
+          <h2>Preset Buttons</h2>
+          <div id="presetForm">
+            <input
+              type="text"
+              id="presetName"
+              placeholder="Enter preset name"
+            />
+            <input
+              type="number"
+              id="presetValue"
+              placeholder="Enter preset value"
+            />
+            <button onclick="addPreset()">Add Preset</button>
+          </div>
+          <div class="presets" id="presetButtons"></div>
+        </div>
+      </div>
+    </div>
+    <!-- кнопка-удаление local-storage -->
+    <!-- <button onclick="clearLocalStorage()">Clear Local Storage</button> -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
